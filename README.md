@@ -1,13 +1,13 @@
-1. Setting up the project struture:
+1. Setting up the project structure:
 
 auth-mysql/
 ├── config/
 │ └── db.js
 ├── controllers/
-│ ├── authController.js                  // For the register and login of an user
+│ ├── authController.js                  // For the register and login of a user
 │ └── userController.js              //For the profile section of the logged user
 ├── middleware/
-│ └── auth.js                //Authentication os the user for the profile section
+│ └── auth.js                //Authentication of the user for the profile section
 ├── models/
 │ └── user.js                //Models are defined for the database
 ├── routes/
@@ -22,8 +22,7 @@ auth-mysql/
 
 2.  initialize the project and install dependencies:
     i) Create a folder named auth-mysql and open it up with VS code Editor.
-
-        ii) Open the terminal in the vs code and install (just copy and paste it):
+    ii) Open the terminal in the vs code and install (just copy and paste it):
 
            npm init -y
            npm install express sequelize mysql2 bcryptjs jsonwebtoken dotenv
@@ -34,23 +33,24 @@ auth-mysql/
 5.  To run the project, type node app.js on the terminal
 
 6.      POST /register to register a new user.
-        POST /login to log in a user and get a JWT.
+        POST /login to log in as a user and get a JWT.
         GET /profile to retrieve the logged-in user's profile information (protected endpoint).
 
-7.  Testing of the project : 1) Unit Testing 2) Integration Testing
+7.  Testing of the project: 1) Unit Testing 2) Integration Testing
 
-8.  For testing install dependencies:
-    npm install --save-dev jest supertest
+8.  For testing install dependencies(copy and paste in the terminal):
 
-9.  Jest Configuration (jest.config.js)
+               npm i--save-dev jest supertest jest-mock-req-res
 
-10. Test Setup File (tests/setup.js)
+10.  Jest Configuration (jest.config.js)
 
-11. Integration Tests for Authentication (tests/auth.test.js)
+11. Test Setup File (tests/setup.js)
 
-12. Unit Tests for Authentication Logic (tests/authController.test.js)
+12. Integration Tests for Authentication (tests/auth.test.js)
 
-13. Running the Tests
+13. Unit Tests for Authentication Logic (tests/authController.test.js)
+
+14. Running the Tests
     To run the tests, add the following script to your package.json:
     "scripts": {
     "test": "jest"
