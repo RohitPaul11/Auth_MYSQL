@@ -22,8 +22,7 @@ auth-mysql/
 
 2.  initialize the project and install dependencies:
     i) Create a folder named auth-mysql and open it up with VS code Editor.
-
-        ii) Open the terminal in the vs code and install (just copy and paste it):
+    ii) Open the terminal in the vs code and install (just copy and paste it):
 
            npm init -y
            npm install express sequelize mysql2 bcryptjs jsonwebtoken dotenv
@@ -37,20 +36,21 @@ auth-mysql/
         POST /login to log in a user and get a JWT.
         GET /profile to retrieve the logged-in user's profile information (protected endpoint).
 
-7.  Testing of the project : 1) Unit Testing 2) Integration Testing
+7.  Testing of the project: 1) Unit Testing 2) Integration Testing
 
-8.  For testing install dependencies:
-    npm install --save-dev jest supertest jest-mock-req-res
+8.  For testing install dependencies(Copy it):
+   
+       npm install --save-dev jest supertest jest-mock-req-res
 
-9.  Jest Configuration (jest.config.js)
+10.  Jest Configuration (jest.config.js)
 
-10. Test Setup File (tests/setup.js)
+11. Test Setup File (tests/setup.js)
 
-11. Integration Tests for Authentication (tests/auth.test.js)
+12. Integration Tests for Authentication (tests/auth.test.js)
 
-12. Unit Tests for Authentication Logic (tests/authController.test.js)
+13. Unit Tests for Authentication Logic (tests/authController.test.js)
 
-13. Running the Tests
+14. Running the Tests
     To run the tests, add the following script to your package.json:
     "scripts": {
     "test": "jest"
